@@ -4,7 +4,7 @@ html {
 }
 
 .header {
-  background-color:rgb(50, 167, 145);
+  background-color: rgb(50, 167, 145);
   padding: 5%;
   display: flex;
   justify-content: space-around;  /* dica */
@@ -14,6 +14,6 @@ html {
 
 } */
 
-.trybewarts-login { 
+.trybewarts-login {
   display: flex;
 }
