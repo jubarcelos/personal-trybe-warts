@@ -43,3 +43,12 @@ height: 500px;
   display: flex;
   flex-wrap: wrap;
 }
+
+#emailHouse {
+  display: flex;
+  flex-wrap: wrap;
+}
+#family {
+  display: flex;
+  flex-direction: column;
+}
