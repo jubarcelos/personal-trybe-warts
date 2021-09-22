@@ -7,8 +7,13 @@ html {
   background-color:rgb(50, 167, 145);
   padding: 5%;
   Display:flex;
+  justify-content: space-around;  /* dica */
 }
 
-.trybewarts-header-logo {
+/* .trybewarts-header-logo {
 
+} */
+
+.trybewarts-login {
+  Display:flex;
 }
