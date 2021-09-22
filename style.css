@@ -1,0 +1,9 @@
+html{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  background-color: rgb(71, 117, 71);
+  padding: 5%;
+}
