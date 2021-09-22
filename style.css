@@ -3,6 +3,10 @@ html {
   margin: 0;
 }
 
+main {
+ display: flex;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   padding: 5%;
@@ -23,4 +27,9 @@ html {
 #trybewarts-header-title {
 display: flex;
 align-self: center;
+}
+
+#evaluation-form {
+display: flex;
+width: 675px;
 }
