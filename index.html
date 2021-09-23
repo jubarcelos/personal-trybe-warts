@@ -8,7 +8,7 @@
     <title>Projeto Rafa e Ju</title>
   </head>
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo"/>
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo" width="50px"/>
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" method="GET" action="">
       <input class="email" type="email" name="email" placeholder="Email" value=""/>
@@ -34,9 +34,10 @@
         </div>
         <div id="family">
           <label id="label-family" for="family">Qual sua família?</label>
-          <input type="radio" name="family" value="Frontend"  />
+          <legend>Frontend</legend> <input  type="radio" name="family" value="Frontend"/>
+          <legend>Backend</legend>
           <input type="radio" name="family" value="Backend" />
-          <input type="radio" name="family" value="FullStack" />
+          <legend>FullStack</legend><input type="radio" name="family" value="FullStack"/>
         </div>
         <label for="contents" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div>
@@ -61,7 +62,7 @@
        <input type="radio" name="rate" value="10">10  
       </div>
       <div>
-      <label for="text-area" class="textarea">Deixe seu comentário:</label>
+      <label for="text-area" class="textarea">Deixe seu comentário:</label> <br>
       <textarea name="text-area" cols="30" rows="10" maxlength="500" id="textarea"></textarea>  
       <span id="counter" value="500"></span>
       
@@ -72,7 +73,7 @@
       </div>
       <button disabled="disabled" type="submit" id="submit-btn">Enviar</button>
       </form>
-      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" />
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" width="300px"/>
     </main>
     <footer>Direitos reservados à Trybewarts©
     </footer>

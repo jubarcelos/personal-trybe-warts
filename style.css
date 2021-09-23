@@ -9,7 +9,7 @@ main {
 
 .header {
   background-color: rgb(50, 167, 145);
-  padding: 5%;
+  padding: 2%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,11 +42,13 @@ main {
 #nameLastName {
   display: flex;
   flex-wrap: wrap;
+  margin: 5%;
 }
 
 #emailHouse {
   display: flex;
   flex-wrap: wrap;
+  margin: 5%;
 }
 
 #family {
