@@ -42,13 +42,14 @@ main {
 #nameLastName {
   display: flex;
   flex-wrap: wrap;
-  margin: 5%;
+  margin-top: 5%;
+  margin-left: 1%;
 }
 
 #emailHouse {
   display: flex;
   flex-wrap: wrap;
-  margin: 5%;
+  margin: 1%;
 }
 
 #family {

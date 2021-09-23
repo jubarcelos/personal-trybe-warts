@@ -43,6 +43,6 @@ textArea.addEventListener('input', () => {
   const text = arrayTextArea.length;
   if (text <= limit) {
     const result = limit - text;
-    count.innerText = result;
+    count.innerHTML = result;
   }
 });
