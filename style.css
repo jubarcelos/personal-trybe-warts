@@ -3,6 +3,10 @@ html {
   margin: 0;
 }
 
+body {
+background-color: hsl(0, 0%, 90%);
+}
+
 main {
   display: flex;
 }
@@ -55,6 +59,11 @@ main {
   color: white;
 }
 
+#title-form {
+display: flex;
+margin: 30px 320px;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -70,20 +79,70 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5%;
-  margin-left: 1%;
+  margin-left: 20%;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+  width: 700px;
 }
 
 #emailHouse {
   display: flex;
   flex-wrap: wrap;
   margin: 1%;
+  margin-left: 20%;
+  margin-bottom: 24px;
+  justify-content: space-evenly;
+  width: 700px;
 }
 
 #family {
   display: flex;
   flex-direction: column;
+  align-items:flex-start;
+  margin-left: 160px;
+  font-size: 17px;
 }
 
 #rate {
   display: flex;
+}
+
+#input-name {
+  border-radius: 6px;
+  height: 50px;
+  width: 300px;
+  border:none; 
+}
+
+#input-lastname {
+  border-radius: 6px;
+  height: 50px;
+  width: 300px;
+  border:none; 
+}
+
+#input-email {
+  border-radius: 6px;
+  height: 50px;
+  width: 300px;
+  border:none; 
+}
+
+#house {
+  border-radius: 6px;
+  height: 50px;
+  width: 230px;
+  border:none;
+  background-color: white; 
+}
+
+#label-content {
+  display: flex;
+  justify-content: flex-end;
+  width: 900px;
+}
+
+#label-family{
+  font-weight: bold;
+  margin-left: 10px;
 }
