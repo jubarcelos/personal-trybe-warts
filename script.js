@@ -37,13 +37,12 @@ addCheck();
 
 const textArea = document.querySelector('#textarea');
 const count = document.querySelector('#counter');
-textArea.addEventListener('input', () =>{
+textArea.addEventListener('input', () => {
   const arrayTextArea = textArea.value.split('');
   const limit = 500;
-  let total = arrayTextArea.length;
-  if(total <= limit) {
-    result = limit - total;
+  const text = arrayTextArea.length;
+  if (text <= limit) {
+    let result = limit - text;
     count.innerText = result;
- }
- console.log(result);
+  }
 });
