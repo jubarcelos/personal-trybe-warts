@@ -32,3 +32,17 @@ function addCheck() {
 addCheck();
 
 // perguntar para as meninas sobre o uso do className e classList para acessar esse checked.
+
+// requisito 20
+
+const textArea = document.querySelector('#textarea');
+textArea.addEventListener('input', () =>{
+ 
+  const limit = 500;
+  let total = parseInt(textArea.value);
+  if(total <= limit) {
+    let resto = limit - total;
+    document.getElementById('textarea').innerText = resto;
+ }
+ console.log('resto')
+})
