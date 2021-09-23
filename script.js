@@ -36,13 +36,14 @@ addCheck();
 // requisito 20
 
 const textArea = document.querySelector('#textarea');
+const count = document.querySelector('#counter');
 textArea.addEventListener('input', () =>{
- 
+  const arrayTextArea = textArea.value.split('');
   const limit = 500;
-  let total = parseInt(textArea.value);
+  let total = arrayTextArea.length;
   if(total <= limit) {
-    let resto = limit - total;
-    document.getElementById('textarea').innerText = resto;
+    result = limit - total;
+    count.innerText = result;
  }
- console.log('resto')
-})
+ console.log(result);
+});
