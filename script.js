@@ -11,8 +11,7 @@ function login() {
 const entrada = document.querySelector('.entrada');
 entrada.addEventListener('click', login);
 
-// requisito 18 Confere se o check está marcado e desabilita o submit do button caso não esteja. 
-// A resposta de "Pranav" no site: https://qastack.com.br/programming/9887360/how-can-i-check-if-a-checkbox-is-checked nos fez pensar em uma saída, mas só depois de ver o código das meninas Meiryland e Camila é que conseguimos acertar o nosso.
+// requisito 18 Confere se o check está marcado e desabilita o submit do button caso não esteja. A resposta de "Pranav" no site: https://qastack.com.br/programming/9887360/how-can-i-check-if-a-checkbox-is-checked nos fez pensar em uma saída, mas só depois de ver o código das meninas Meiryland e Camila é que conseguimos acertar o nosso.
 
 function addCheck() {
   const check = document.querySelector('#agreement');
