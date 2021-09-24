@@ -11,6 +11,7 @@ function login() {
 const entrada = document.querySelector('.entrada');
 entrada.addEventListener('click', login);
 
+// Ju testou e viu que é possível usar sem if nem nada : submit.disabled = !submit.disabled
 // requisito 18 - A resposta de "Pranav" no site: https://qastack.com.br/programming/9887360/how-can-i-check-if-a-checkbox-is-checked e o código do colega João Melo conseguimos arrumar o nosso.
 const checkAgree = document.querySelector('#agreement');
 const submit = document.querySelector('#submit-btn');
@@ -21,19 +22,6 @@ checkAgree.addEventListener('click', () => {
     submit.disabled = true;
   }
 });
-// sem if nem nada usar : submit.disabled = !submit.disabled
-
-// Pensamos também nessa solução das classes conversando e vendo o código da Camila.
-// const check = document.querySelector('#agreement');
-// const submit = document.querySelector('#submit-btn');
-// check.addEventListener('click', (event) => {
-//   event.target.classList.toggle('checked');
-//   if (check.className === 'checked') {
-//     submit.disabled = false;
-//   } else {
-//     submit.disabled = true;
-//   }
-// });
 
 // requisito 20
 const textArea = document.querySelector('#textarea');
@@ -48,14 +36,27 @@ textArea.addEventListener('input', () => {
   }
 });
 
-// escutar o botão de envio e armazenar nos próprios inputs as informações preenchidas e as solicitações.
+// Requisiot 21 - Consultamos o código do Gustavo Meira e Leonardo para entender algumas coisas 
+// Site que consultamos e aprendemos o forEach - https://www.alura.com.br/artigos/javascript-quando-devo-usar-foreach-e-map?gclid=CjwKCAjw7rWKBhAtEiwAJ3CWLIgC6WrRULsem8NpISrG7eqKk1OCu04K72fsVyySispM8EuPgYF-ghoCvyAQAvD_BwE
 const allForm = document.querySelector('#evaluation-form');
-const clearForm = () => allForm.innerHTML = '';
+const clearForm = () => { allForm.innerHTML = ''};
 
 const family = document.querySelectorAll('.family');
 const allRate = document.querySelectorAll('.rate');
 let inputFamily = '';
 let inputRate = '';
+
+family.forEach((radio) => {
+  radio.addEventListener('click', (event) => {
+    inputFamily = event.target.value;
+  });
+});
+
+allRate.forEach((rate) => {
+  rate.addEventListener('click', (event) => {
+    inputRate = event.target.value;
+  });
+});
 
 function checkSubjects() {
   let personSubjects = '';
@@ -69,28 +70,17 @@ function checkSubjects() {
   return personSubjects;
 }
 
-family.forEach((radio) => {
-  radio.addEventListener('click', (event) => {
-    inputFamily = event.target.value;
-  });
-});
-
-allRate.forEach((rate) => {
-  rate.addEventListener('click', (event) => {
-    inputRate = event.target.value;
-  });
-});
 submit.addEventListener('click', (event) => {
   event.preventDefault();
-  const formAnswers = (`\n
-  Nome: ${document.querySelector('#input-name').value} ${document.querySelector('#input-lastname').value}
+  const fullName = (`${document.querySelector('#input-name').value} ${document.querySelector('#input-lastname').value}`);
+  const formAnswers = (`
+    Nome: ${fullName}
     Email: ${document.querySelector('#input-email').value}
     Casa: ${document.querySelector('#house').value}
     Família: ${inputFamily}
     Avaliação: ${inputRate}
     Matérias: ${checkSubjects()}
     Observações: ${document.querySelector('#textarea').value}`);
-  clearForm()
+  clearForm();
   document.querySelector('#evaluation-form').innerHTML = formAnswers;
 });
-

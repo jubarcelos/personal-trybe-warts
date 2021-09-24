@@ -4,7 +4,7 @@ html {
 }
 
 body {
-background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 90%);
 }
 
 main {
@@ -40,7 +40,7 @@ main {
   border-radius: 6px;
   height: 30px;
   width: 140px;
-  border: none; 
+  border: none;
 }
 
 .entrada {
@@ -50,7 +50,7 @@ main {
   border: none;
   background-color: rgb(52, 8, 109);
   color: white;
-  font-weight: bold;
+  font-weight: 600px;
 }
 
 #trybewarts-header-title {
@@ -60,8 +60,8 @@ main {
 }
 
 #title-form {
-display: flex;
-margin: 30px 320px;
+  display: flex;
+  margin: 30px 320px;
 }
 
 #evaluation-form {
@@ -98,7 +98,7 @@ margin: 30px 320px;
 #family {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-left: 160px;
   font-size: 17px;
 }
@@ -120,29 +120,29 @@ margin: 30px 320px;
   border-radius: 6px;
   height: 50px;
   width: 300px;
-  border:none; 
+  border: none;
 }
 
 #input-lastname {
   border-radius: 6px;
   height: 50px;
   width: 300px;
-  border:none; 
+  border: none;
 }
 
 #input-email {
   border-radius: 6px;
   height: 50px;
   width: 300px;
-  border:none; 
+  border: none;
 }
 
 #house {
   border-radius: 6px;
   height: 50px;
   width: 230px;
-  border:none;
-  background-color: white; 
+  border: none;
+  background-color: white;
 }
 
 #label-content {
@@ -151,7 +151,7 @@ margin: 30px 320px;
   width: 900px;
 }
 
-#label-family{
-  font-weight: bold;
+#label-family {
+  font-weight: 600px;
   margin-left: 10px;
 }
