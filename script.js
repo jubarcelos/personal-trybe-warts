@@ -36,10 +36,10 @@ textArea.addEventListener('input', () => {
   }
 });
 
-// Requisiot 21 - Consultamos o código do Gustavo Meira e Leonardo para entender algumas coisas 
+// Requisiot 21 - Consultamos o código do Gustavo Meira e Leonardo para entender algumas coisas
 // Site que consultamos e aprendemos o forEach - https://www.alura.com.br/artigos/javascript-quando-devo-usar-foreach-e-map?gclid=CjwKCAjw7rWKBhAtEiwAJ3CWLIgC6WrRULsem8NpISrG7eqKk1OCu04K72fsVyySispM8EuPgYF-ghoCvyAQAvD_BwE
 const allForm = document.querySelector('#evaluation-form');
-const clearForm = () => { allForm.innerHTML = ''};
+const clearForm = () => { allForm.innerHTML = '' };
 
 const family = document.querySelectorAll('.family');
 const allRate = document.querySelectorAll('.rate');
@@ -72,9 +72,10 @@ function checkSubjects() {
 
 submit.addEventListener('click', (event) => {
   event.preventDefault();
-  const fullName = (`${document.querySelector('#input-name').value} ${document.querySelector('#input-lastname').value}`);
+  const name = document.querySelector('#input-name');
+  const lastName = document.querySelector('#input-lastname');
   const formAnswers = (`
-    Nome: ${fullName}
+    Nome: ${fname} ${lastName}
     Email: ${document.querySelector('#input-email').value}
     Casa: ${document.querySelector('#house').value}
     Família: ${inputFamily}

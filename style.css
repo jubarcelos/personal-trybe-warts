@@ -50,7 +50,7 @@ main {
   border: none;
   background-color: rgb(52, 8, 109);
   color: white;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 #trybewarts-header-title {
@@ -152,6 +152,6 @@ main {
 }
 
 #label-family {
-  font-weight: 600px;
+  font-weight: 600;
   margin-left: 10px;
 }
