@@ -75,7 +75,7 @@ submit.addEventListener('click', (event) => {
   const name = document.querySelector('#input-name');
   const lastName = document.querySelector('#input-lastname');
   const formAnswers = (`
-    Nome: ${name} ${lastName}
+    Nome: ${name.value} ${lastName.value}
     Email: ${document.querySelector('#input-email').value}
     Casa: ${document.querySelector('#house').value}
     Família: ${inputFamily}
