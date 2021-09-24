@@ -88,7 +88,7 @@ submit.addEventListener('click', (event) => {
     Casa: ${document.querySelector('#house').value}
     Família: ${inputFamily}
     Avaliação: ${inputRate}
-    Matéria: ${checkSubjects()}
+    Matérias: ${checkSubjects()}
     Observações: ${document.querySelector('#textarea').value}`);
   clearForm()
   document.querySelector('#evaluation-form').innerHTML = formAnswers;

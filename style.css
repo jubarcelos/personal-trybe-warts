@@ -103,6 +103,15 @@ margin: 30px 320px;
   font-size: 17px;
 }
 
+.family {
+  display: flex;
+}
+
+.label {
+  display: flex;
+  align-self: flex-start;
+}
+
 #rate {
   display: flex;
 }
