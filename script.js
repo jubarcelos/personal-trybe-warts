@@ -93,3 +93,4 @@ submit.addEventListener('click', (event) => {
   clearForm()
   document.querySelector('#evaluation-form').innerHTML = formAnswers;
 });
+
