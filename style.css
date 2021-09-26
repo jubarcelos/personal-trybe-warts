@@ -9,7 +9,7 @@ body {
 
 main {
   display: flex;
-  font-family: 'Work Sans', 'sans-serif';
+  font-family: Work Sans, sans-serif;
 }
 
 .header {
@@ -146,11 +146,7 @@ main {
   border: 1px solid rgb(50, 167, 145);
 }
 
-#label-family,
-#label-content,
-#label-rate,
-#textarea, 
-#label-infos {
+#label-family , #label-content , #label-rate , #textarea , #label-infos {
   display: flex;
   justify-content: start;
   margin-left: 5%;
@@ -159,9 +155,7 @@ main {
   margin-top: 2%;
 }
 
-#family,
-#matter, 
-#blocTextArea {
+#family , #matter , #blocTextArea {
   display: flex;
   flex-wrap: wrap;
   padding: 3%;
@@ -169,13 +163,7 @@ main {
   margin-left: 0%;
 }
 
-#firstFamily , 
-#secondFamily , 
-#thirdFamily , 
-#subjects , 
-#rates , 
-#agree ,  
-#blocTextArea {
+#firstFamily , #secondFamily , #thirdFamily , #subjects , #rates , #agree , #blocText {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
