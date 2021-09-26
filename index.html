@@ -22,7 +22,8 @@
   <body>
     <h1 id="title-form">Formulário de Avaliação</h1>
     <main>
-      <form action="" id="evaluation-form" method="GET" width="675px">
+      <div id="form">
+      <form action="" id="evaluation-form" method="GET">
         <div id="nameLastName">
           <input type="text" id="input-name" placeholder="Nome" />
           <input type="text" id="input-lastname" placeholder="Sobrenome" />
@@ -85,12 +86,15 @@
       <span id="counter" value="500">500</span>
       </div>
       <div id="agree">
-        <input type="checkbox" name="" id="agreement" value="" required>  
+        <input type="checkbox" name="" id="agreement" value="" required="required">  
        <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
       </div>
       <button disabled="true" type="submit" id="submit-btn">Enviar</button>
       </form>
+    </div>
+    <div id="trybewarts-logo">
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" width="500px"/>
+    </div>
     </main>
     <footer>Direitos reservados à Trybewarts©
     </footer>

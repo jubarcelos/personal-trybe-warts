@@ -10,6 +10,7 @@ body {
 main {
   display: flex;
   font-family: Work Sans, sans-serif;
+  justify-content: space-around;
 }
 
 .header {
@@ -68,16 +69,24 @@ main {
   padding: 2%;
 }
 
+#form {
+  display: flex;
+  justify-content: start;
+}
+
+#trybewarts-logo {
+  display: flex;
+}
+
 #trybewarts-forms-logo {
+  display: flex;
   height: 500px;
-  margin-left: 250px;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
 }
 
 #nameLastName {
