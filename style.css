@@ -9,6 +9,7 @@ body {
 
 main {
   display: flex;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -20,33 +21,34 @@ main {
   margin: -10px;
 }
 
-/* .trybewarts-header-logo {
-
-} */
-
 .trybewarts-login {
   display: flex;
   justify-content: flex-end;
+  width: 35%;
+  height: 40%;
 }
 
 .email {
   border-radius: 6px;
-  height: 30px;
-  width: 140px;
+  height: 50%;
+  width: 40%;
+  padding: 2%;
   border: none;
 }
 
 .password {
   border-radius: 6px;
-  height: 30px;
-  width: 140px;
+  height: 50%;
+  width: 30%;
+  padding: 2%;
   border: none;
 }
 
 .entrada {
   border-radius: 6px;
-  height: 30px;
-  width: 120px;
+  height: 30%;
+  width: 25%;
+  padding: 2%;
   border: none;
   background-color: rgb(52, 8, 109);
   color: white;
@@ -61,7 +63,14 @@ main {
 
 #title-form {
   display: flex;
-  margin: 30px 320px;
+  justify-content: start;
+  margin: 3% 10%;
+  padding: 2%;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-left: 250px;
 }
 
 #evaluation-form {
@@ -70,36 +79,27 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
-  margin-left: 250px;
-}
-
 #nameLastName {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
-  margin-left: 20%;
-  margin-bottom: 5px;
+  margin-bottom: 3%;
   justify-content: space-evenly;
-  width: 700px;
+  width: 100%;
 }
 
 #emailHouse {
   display: flex;
   flex-wrap: wrap;
-  margin: 1%;
-  margin-left: 20%;
-  margin-bottom: 24px;
+  margin-bottom: 3%;
   justify-content: space-evenly;
-  width: 700px;
+  width: 100%;
 }
 
 #family {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 160px;
+  margin-left: 30%;
   font-size: 17px;
 }
 
@@ -119,39 +119,124 @@ main {
 #input-name {
   border-radius: 6px;
   height: 50px;
-  width: 300px;
+  width: 45%;
   border: none;
+  border: 1px solid rgb(50, 167, 145);
 }
 
 #input-lastname {
   border-radius: 6px;
   height: 50px;
-  width: 300px;
+  width: 45%;
   border: none;
+  border: 1px solid rgb(50, 167, 145);
 }
 
 #input-email {
   border-radius: 6px;
   height: 50px;
-  width: 300px;
+  width: 45%;
   border: none;
+  border: 1px solid rgb(50, 167, 145);
 }
 
 #house {
   border-radius: 6px;
-  height: 50px;
-  width: 230px;
+  height: 52px;
+  width: 45%;
   border: none;
   background-color: white;
+  border: 1px solid rgb(50, 167, 145);
 }
 
-#label-content {
+#label-family,
+#label-content,
+#label-rate,
+#textarea,
+#label-infos {
   display: flex;
-  justify-content: flex-end;
-  width: 900px;
+  justify-content: start;
+  margin-left: 5%;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 2%;
 }
 
-#label-family {
-  font-weight: 600;
-  margin-left: 10px;
+#family,
+#matter,
+#blocTextArea {
+display: flex;
+flex-wrap: wrap;
+padding: 3%;
+margin-right: 30%;
+margin-left: 0%;
+}
+
+#firstFamily,
+#secondFamily,
+#thirdFamily,
+#subjects,
+#rates,
+#agree,
+#blocTextArea {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+  padding: 5%;
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1%;
+}
+
+.rate {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#textarea,
+#label-infos {
+display: flex;
+align-self: flex-start;
+width: 80%;
+margin: 0;
+}
+
+#textarea{
+  border: 1px solid rgb(50, 167, 145);
+  border-radius: 3%;
+}
+
+#counter,
+#agreement {
+  display: flex;
+  align-self: flex-end;
+  width: 10%;
+  padding: 2%;
+}
+
+footer {
+  margin-top: 7%;
+  color: rgb(50, 167, 145);
+}
+
+#submit-btn {
+  display: flex;
+  align-self: center;
+  width: 30%;
+  margin: 0;
+  padding: 2%;
+  border: 4px solid rgb(239, 245, 244);
+  background-color: rgb(50, 167, 145);
+  color: rgb(252, 252, 252);
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
 }
