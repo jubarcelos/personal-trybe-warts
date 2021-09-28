@@ -119,11 +119,13 @@ main {
 
 .family {
   display: flex;
+  cursor: pointer;
 }
 
 .label {
   display: flex;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 #rate {
@@ -195,6 +197,7 @@ main {
   justify-content: center;
   padding: 1%;
   user-select: none;
+  cursor: pointer;
 }
 
 .rate {
@@ -203,6 +206,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   user-select: none;
+  cursor: pointer;
 }
 
 #textarea , #label-infos {
@@ -218,6 +222,9 @@ main {
   width: 675px;
   resize: none;
   outline: none;
+  font-weight: 400;
+  font-size: 16;
+  padding: 2%;
 }
 
 #agreement {
@@ -248,6 +255,7 @@ footer {
   font-size: 15px;
   font-weight: 700;
   user-select: none;
+  cursor: pointer;
 }
 
 #counter {
@@ -255,4 +263,16 @@ footer {
   transform: translate( 630px, -210%);
   text-align: right;
   user-select: none;
+  font-style: italic;
+  color: rgb(108, 122, 96);
+}
+
+.textarea {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+#hofs , #jest , #promises , #react , #SQL , #python , #agreement , #label-infos {
+  cursor: pointer;
 }

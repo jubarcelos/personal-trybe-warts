@@ -31,6 +31,7 @@
         <div id="emailHouse">
           <input type="email" id="input-email" placeholder="Email" />
           <select name="" id="house">
+            <option disabled selected value>Selecione a sua casa</option>
             <option type="text" id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option type="text" id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option type="text" id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -57,12 +58,12 @@
         <div id="matter">
           <label for="contains" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div id="subjects">
-            <input class="subject" type="checkbox" name="contains" value="HoFs">HoFs
-            <input class="subject" type="checkbox" name="contains" value="Jest">Jest
-            <input class="subject" type="checkbox" name="contains" value="Promises">Promises
-            <input class="subject" type="checkbox" name="contains" value="React">React
-            <input class="subject" type="checkbox" name="contains" value="SQL">SQL
-            <input class="subject" type="checkbox" name="contains" value="Python">Python
+            <input class="subject" type="checkbox" name="contains" value= "HoFs" id ="hofs"> <label for="hofs">HoFs</label> 
+            <input class="subject" type="checkbox" name="contains" value= "Jest" id ="jest"> <label for="jest"> Jest</label>
+            <input class="subject" type="checkbox" name="contains" value= "Promises" id ="promises"> <label for="promises">Promises</label>
+            <input class="subject" type="checkbox" name="contains" value= "React"id ="react"> <label for="react">React</label>
+            <input class="subject" type="checkbox" name="contains" value= "SQL" id ="SQL"> <label for="SQL">SQL</label>
+            <input class="subject" type="checkbox" name="contains" value= "Python" id ="python"> <label for="python">Python</label>
         </div>
         </div>
         <div id="rate">
@@ -87,7 +88,7 @@
       </div>
       <div id="agree">
         <input type="checkbox" name="" id="agreement" value="" required="required">  
-       <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+       <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
       </div>
       <button disabled="true" type="submit" id="submit-btn">Enviar</button>
       </form>
