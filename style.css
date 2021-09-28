@@ -162,6 +162,7 @@ main {
   width: 45%;
   background-color: white;
   border: 1px solid rgb(50, 167, 145);
+  outline: none;
 }
 
 #label-family , #label-content , #label-rate , #textarea , #label-infos {
@@ -189,6 +190,7 @@ main {
   width: 100%;
   padding: 5%;
   user-select: none;
+  font-size: 17px;
 }
 
 .subjects {
@@ -207,6 +209,7 @@ main {
   justify-content: center;
   user-select: none;
   cursor: pointer;
+  font-size: 30px;
 }
 
 #textarea , #label-infos {
@@ -237,8 +240,10 @@ main {
 
 footer {
   margin-top: 7%;
-  color: rgb(50, 167, 145);
+  color: rgb(245, 247, 246);
   user-select: none;
+  background-color: rgb(50, 167, 145);
+  padding: 1%;
 }
 
 #submit-btn {
