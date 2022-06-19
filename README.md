@@ -26,12 +26,10 @@ The objective of the project in this sprint is to modify the content that appear
 
 * [Link to view at Github Pages]()
 
-### Ajustes e melhorias
+### Improviments
 
-O projeto ainda está em desenvolvimento e o próximo sprint adicionará mais funcionalidades.
-Algumas das possíveis modificações futuras incluem:
+This project still in development and I have intention to do some things like:
 
 - [ ] Publich in Github Pages
 - [ ] Implement more interactions using Javascript.
-- [ ] Biuld a Backend using nodeJS or another similar tech.
-- [ ] Deploy the backend in cloud (Heroku/AWS/Etc).
+- [ ] Make that a responsive page.
